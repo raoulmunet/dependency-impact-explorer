@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dependency Impact Explorer</title><link rel="stylesheet" href="styles.css"></head><body><div class="shell"><div class="topbar"><div class="brand">Dependency Impact Explorer</div><a href="https://raoulmunet.github.io/dev-data-tools/">Dev Data Tools</a></div><section class="hero"><h1>Dependency Impact Explorer</h1><p class="muted">Trace direct and transitive dependencies from a simple edge list.</p></section><section class="panel"><textarea id="input">REPORT_A -> VIEW_X
+REPORT_B -> VIEW_X
+VIEW_X -> TABLE_CUSTOMER
+PROC_P -> TABLE_CUSTOMER
+API_Y -> PROC_P</textarea><div class="toolbar"><input id="node" value="TABLE_CUSTOMER"><button class="primary" id="run">Explore impact</button></div><div id="summary" class="statrow"></div><div id="result"></div></section></div><script src="app.js"></script></body></html>
